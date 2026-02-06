@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('../fonts/geist-mono/GeistMono-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-geist-mono: 'Geist Mono', ui-monospace, SFMono-Regular,
+    'Roboto Mono', Menlo, Monaco, 'Liberation Mono', 'DejaVu Sans Mono',
+    'Courier New', monospace;
+}
