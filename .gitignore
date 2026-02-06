@@ -2,3 +2,5 @@ geist-font-main
 node_modules
 dist
 .svelte-kit
+*.tgz
+playground/static/ref-fonts

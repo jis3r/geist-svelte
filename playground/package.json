@@ -1,0 +1,29 @@
+{
+  "name": "playground",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "sync-ref-fonts": "node -e \"const fs=require('fs'); const path=require('path'); const cwd=process.cwd(); const src=path.join(cwd,'../packages/geist-svelte/src/lib/fonts'); const dest=path.join(cwd,'static/ref-fonts'); if(fs.existsSync(src)){ fs.mkdirSync(dest,{recursive:true}); fs.cpSync(src,dest,{recursive:true}); }\"",
+    "predev": "pnpm run sync-ref-fonts",
+    "prebuild": "pnpm run sync-ref-fonts",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "geist-svelte": "workspace:*"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^7.0.0",
+    "@sveltejs/kit": "^2.50.2",
+    "@sveltejs/vite-plugin-svelte": "^6.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^6.3.0"
+  }
+}
