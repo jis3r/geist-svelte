@@ -3,7 +3,12 @@
   "scripts": {
     "build": "pnpm -r run build",
     "dev": "pnpm --filter playground dev",
-    "check": "pnpm -r run check"
+    "check": "pnpm -r run check",
+    "version": "changeset version",
+    "release": "pnpm --filter geist-svelte build && (cd packages/geist-svelte && npm publish) && ./.github/scripts/create-release.sh"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
