@@ -5,7 +5,10 @@
     "dev": "pnpm --filter playground dev",
     "check": "pnpm -r run check",
     "version": "changeset version",
-    "release": "pnpm --filter geist-svelte build && (cd packages/geist-svelte && npm publish) && bash .github/scripts/create-release.sh"
+    "release": "bash .github/scripts/release.sh",
+    "changeset:patch": "node .github/scripts/add-changeset.mjs patch",
+    "changeset:minor": "node .github/scripts/add-changeset.mjs minor",
+    "changeset:major": "node .github/scripts/add-changeset.mjs major"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.0"
