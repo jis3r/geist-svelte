@@ -5,7 +5,7 @@
     "dev": "pnpm --filter playground dev",
     "check": "pnpm -r run check",
     "version": "changeset version",
-    "release": "pnpm --filter geist-svelte build && (cd packages/geist-svelte && npm publish) && ./.github/scripts/create-release.sh"
+    "release": "pnpm --filter geist-svelte build && (cd packages/geist-svelte && npm publish) && bash .github/scripts/create-release.sh"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.0"
