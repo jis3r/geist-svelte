@@ -172,4 +172,4 @@ GeistSans.style.fontFamily; // full font-family string with fallbacks
 
 The Geist font family is free and open sourced under the [SIL Open Font License](https://scripts.sil.org/OFL).
 
-This package is licensed under the [MIT License](LICENSE).
+This package is licensed under the MIT License.

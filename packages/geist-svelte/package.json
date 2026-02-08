@@ -58,6 +58,7 @@
   },
   "files": [
     "dist",
+    "README.md",
     "!dist/**/*.test.*",
     "!dist/**/*.spec.*"
   ],
