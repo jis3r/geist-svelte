@@ -1,7 +1,7 @@
 {
   "name": "playground",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "sync-ref-fonts": "node -e \"const fs=require('fs'); const path=require('path'); const cwd=process.cwd(); const src=path.join(cwd,'../packages/geist-svelte/src/lib/fonts'); const dest=path.join(cwd,'static/ref-fonts'); if(fs.existsSync(src)){ fs.mkdirSync(dest,{recursive:true}); fs.cpSync(src,dest,{recursive:true}); }\"",
