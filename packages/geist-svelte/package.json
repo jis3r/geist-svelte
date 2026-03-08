@@ -1,6 +1,6 @@
 {
   "name": "geist-svelte",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Geist font family for Svelte/SvelteKit — Sans, Mono, and Pixel variants by Vercel.",
   "type": "module",
   "scripts": {
