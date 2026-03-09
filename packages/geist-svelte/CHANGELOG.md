@@ -1,5 +1,11 @@
 # geist-svelte
 
+## 1.0.2
+
+### Patch Changes
+
+- 7248700: Update package docs in README for clearer, shorter setup instructions.
+
 ## 1.0.0
 
 ### Major Changes
