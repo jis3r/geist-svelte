@@ -2,7 +2,7 @@
   import { GeistSansNonVariable } from 'geist-svelte/font/sans-non-variable';
 
   const weights = [100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
-  const weightNames = ['Thin', 'UltraLight', 'Light', 'Regular', 'Medium', 'SemiBold', 'Bold', 'Black', 'UltraBlack'] as const;
+  const weightNames = ['Thin', 'UltraLight', 'Light', 'Regular', 'Medium', 'SemiBold', 'Bold', 'ExtraBold', 'Black'] as const;
   const sample = 'The quick brown fox jumps over the lazy dog';
 </script>
 
