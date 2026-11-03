@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Geist Serif Triangle';
+  src: url('../../fonts/geist-serif/GeistSerif-Triangle.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-geist-serif-triangle: 'Geist Serif Triangle', 'Times New Roman', Times,
+    serif;
+}

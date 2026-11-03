@@ -9,6 +9,11 @@
     GeistPixelCircle,
     GeistPixelTriangle,
     GeistPixelLine,
+    GeistSerif,
+    GeistSerifRegular,
+    GeistSerifSquare,
+    GeistSerifTriangle,
+    GeistSerifHeart,
   } from 'geist-svelte';
 
   const fonts = [
@@ -21,12 +26,17 @@
     { name: 'GeistPixelCircle', obj: GeistPixelCircle, ref: "'Ref Geist Pixel Circle', monospace" },
     { name: 'GeistPixelTriangle', obj: GeistPixelTriangle, ref: "'Ref Geist Pixel Triangle', monospace" },
     { name: 'GeistPixelLine', obj: GeistPixelLine, ref: "'Ref Geist Pixel Line', monospace" },
+    { name: 'GeistSerif', obj: GeistSerif, ref: "'Ref Geist Serif', serif" },
+    { name: 'GeistSerifRegular', obj: GeistSerifRegular, ref: "'Ref Geist Serif Regular', serif" },
+    { name: 'GeistSerifSquare', obj: GeistSerifSquare, ref: "'Ref Geist Serif Square', serif" },
+    { name: 'GeistSerifTriangle', obj: GeistSerifTriangle, ref: "'Ref Geist Serif Triangle', serif" },
+    { name: 'GeistSerifHeart', obj: GeistSerifHeart, ref: "'Ref Geist Serif Heart', serif" },
   ];
 </script>
 
 <h1>Barrel Import</h1>
 <p><code>import {'{ GeistSans, GeistMono, ... }'} from 'geist-svelte'</code></p>
-<p class="note">All 9 exports from the root package path.</p>
+<p class="note">All {fonts.length} exports from the root package path.</p>
 
 <div class="compare-grid">
   <div>

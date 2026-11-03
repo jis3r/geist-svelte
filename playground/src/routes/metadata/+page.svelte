@@ -10,6 +10,11 @@
     GeistPixelTriangle,
     GeistPixelLine,
   } from 'geist-svelte/font/pixel';
+  import { GeistSerif } from 'geist-svelte/font/serif/variable';
+  import { GeistSerifRegular } from 'geist-svelte/font/serif/regular';
+  import { GeistSerifSquare } from 'geist-svelte/font/serif/square';
+  import { GeistSerifTriangle } from 'geist-svelte/font/serif/triangle';
+  import { GeistSerifHeart } from 'geist-svelte/font/serif/heart';
 
   const allFonts = [
     { name: 'GeistSans', obj: GeistSans, ref: "'Ref Geist Sans', sans-serif" },
@@ -21,6 +26,11 @@
     { name: 'GeistPixelCircle', obj: GeistPixelCircle, ref: "'Ref Geist Pixel Circle', monospace" },
     { name: 'GeistPixelTriangle', obj: GeistPixelTriangle, ref: "'Ref Geist Pixel Triangle', monospace" },
     { name: 'GeistPixelLine', obj: GeistPixelLine, ref: "'Ref Geist Pixel Line', monospace" },
+    { name: 'GeistSerif', obj: GeistSerif, ref: "'Ref Geist Serif', serif" },
+    { name: 'GeistSerifRegular', obj: GeistSerifRegular, ref: "'Ref Geist Serif Regular', serif" },
+    { name: 'GeistSerifSquare', obj: GeistSerifSquare, ref: "'Ref Geist Serif Square', serif" },
+    { name: 'GeistSerifTriangle', obj: GeistSerifTriangle, ref: "'Ref Geist Serif Triangle', serif" },
+    { name: 'GeistSerifHeart', obj: GeistSerifHeart, ref: "'Ref Geist Serif Heart', serif" },
   ];
 </script>
 

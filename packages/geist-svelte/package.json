@@ -1,7 +1,7 @@
 {
   "name": "geist-svelte",
   "version": "1.0.2",
-  "description": "Geist font family for Svelte/SvelteKit — Sans, Mono, and Pixel variants by Vercel.",
+  "description": "Geist font family for Svelte/SvelteKit: Sans, Mono, Serif, and Pixel variants by Vercel.",
   "type": "module",
   "scripts": {
     "build": "svelte-package",
@@ -12,6 +12,7 @@
     "geist mono",
     "geist sans",
     "geist pixel",
+    "geist serif",
     "vercel font",
     "svelte",
     "sveltekit",
@@ -54,6 +55,36 @@
       "types": "./dist/font/pixel.d.ts",
       "svelte": "./dist/font/pixel.js",
       "default": "./dist/font/pixel.js"
+    },
+    "./font/serif": {
+      "types": "./dist/font/serif.d.ts",
+      "svelte": "./dist/font/serif.js",
+      "default": "./dist/font/serif.js"
+    },
+    "./font/serif/variable": {
+      "types": "./dist/font/serif/variable.d.ts",
+      "svelte": "./dist/font/serif/variable.js",
+      "default": "./dist/font/serif/variable.js"
+    },
+    "./font/serif/regular": {
+      "types": "./dist/font/serif/regular.d.ts",
+      "svelte": "./dist/font/serif/regular.js",
+      "default": "./dist/font/serif/regular.js"
+    },
+    "./font/serif/square": {
+      "types": "./dist/font/serif/square.d.ts",
+      "svelte": "./dist/font/serif/square.js",
+      "default": "./dist/font/serif/square.js"
+    },
+    "./font/serif/triangle": {
+      "types": "./dist/font/serif/triangle.d.ts",
+      "svelte": "./dist/font/serif/triangle.js",
+      "default": "./dist/font/serif/triangle.js"
+    },
+    "./font/serif/heart": {
+      "types": "./dist/font/serif/heart.d.ts",
+      "svelte": "./dist/font/serif/heart.js",
+      "default": "./dist/font/serif/heart.js"
     }
   },
   "files": [
