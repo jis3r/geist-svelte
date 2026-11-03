@@ -1,5 +1,5 @@
 import './variable.css';
-import { PIXEL_FALLBACK } from './fallback';
+import { PIXEL_FALLBACK } from './fallback.js';
 
 export const GeistPixel = {
   variable: '--font-geist-pixel',

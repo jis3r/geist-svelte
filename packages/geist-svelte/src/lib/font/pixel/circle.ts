@@ -1,5 +1,5 @@
 import './circle.css';
-import { PIXEL_FALLBACK } from './fallback';
+import { PIXEL_FALLBACK } from './fallback.js';
 
 export const GeistPixelCircle = {
   variable: '--font-geist-pixel-circle',

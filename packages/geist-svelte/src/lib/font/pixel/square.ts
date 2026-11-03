@@ -1,5 +1,5 @@
 import './square.css';
-import { PIXEL_FALLBACK } from './fallback';
+import { PIXEL_FALLBACK } from './fallback.js';
 
 export const GeistPixelSquare = {
   variable: '--font-geist-pixel-square',
