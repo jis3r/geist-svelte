@@ -6,12 +6,12 @@
   const sample = 'const fn = () => "hello";';
 </script>
 
-<h1>Geist Mono — Variable</h1>
+<h1>Geist Mono - Variable</h1>
 <p><code>import {'{ GeistMono }'} from 'geist-svelte/font/mono'</code></p>
 
 <div class="compare-grid">
   <div>
-    <div class="col-header col-pkg">Package — var(--font-geist-mono)</div>
+    <div class="col-header col-pkg">Package - var(--font-geist-mono)</div>
     {#each weights as weight, i}
       <div class="row">
         <span class="label">{weight} {weightNames[i]}</span>
@@ -20,7 +20,7 @@
     {/each}
   </div>
   <div>
-    <div class="col-header col-ref">Reference — direct @font-face</div>
+    <div class="col-header col-ref">Reference - direct @font-face</div>
     {#each weights as weight, i}
       <div class="row">
         <span class="label">{weight} {weightNames[i]}</span>
@@ -30,8 +30,31 @@
   </div>
 </div>
 
+<h2>Italic</h2>
+<div class="compare-grid">
+  <div>
+    <div class="col-header col-pkg">Package (italic) - var(--font-geist-mono)</div>
+    {#each weights as weight, i}
+      <div class="row">
+        <span class="label">{weight} {weightNames[i]}</span>
+        <span class="sample pkg-font" style:font-weight={weight} style:font-style="italic">{sample}</span>
+      </div>
+    {/each}
+  </div>
+  <div>
+    <div class="col-header col-ref">Reference (italic) - direct @font-face</div>
+    {#each weights as weight, i}
+      <div class="row">
+        <span class="label">{weight} {weightNames[i]}</span>
+        <span class="sample ref-font" style:font-weight={weight} style:font-style="italic">{sample}</span>
+      </div>
+    {/each}
+  </div>
+</div>
+
 <style>
   h1 { font-weight: 700; font-size: 1.75rem; margin-bottom: 0.25rem; }
+  h2 { font-weight: 600; font-size: 1rem; margin-top: 2rem; color: #888; }
   code { background: #1a1a1a; padding: 0.15rem 0.4rem; border-radius: 3px; font-size: 0.8em; }
 
   .row {

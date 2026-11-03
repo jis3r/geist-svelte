@@ -221,3 +221,144 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Ref Geist Sans';
+  src: url('/ref-fonts/geist-sans/Geist-Italic-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Sans NV';
+  src: url('/ref-fonts/geist-sans/Geist-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Sans NV';
+  src: url('/ref-fonts/geist-sans/Geist-ExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Sans NV';
+  src: url('/ref-fonts/geist-sans/Geist-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Sans NV';
+  src: url('/ref-fonts/geist-sans/Geist-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Sans NV';
+  src: url('/ref-fonts/geist-sans/Geist-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Sans NV';
+  src: url('/ref-fonts/geist-sans/Geist-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Sans NV';
+  src: url('/ref-fonts/geist-sans/Geist-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Sans NV';
+  src: url('/ref-fonts/geist-sans/Geist-ExtraBoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Sans NV';
+  src: url('/ref-fonts/geist-sans/Geist-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Mono';
+  src: url('/ref-fonts/geist-mono/GeistMono-Italic-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Mono NV';
+  src: url('/ref-fonts/geist-mono/GeistMono-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Mono NV';
+  src: url('/ref-fonts/geist-mono/GeistMono-ExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Mono NV';
+  src: url('/ref-fonts/geist-mono/GeistMono-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Mono NV';
+  src: url('/ref-fonts/geist-mono/GeistMono-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Mono NV';
+  src: url('/ref-fonts/geist-mono/GeistMono-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Mono NV';
+  src: url('/ref-fonts/geist-mono/GeistMono-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Mono NV';
+  src: url('/ref-fonts/geist-mono/GeistMono-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Mono NV';
+  src: url('/ref-fonts/geist-mono/GeistMono-ExtraBoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Mono NV';
+  src: url('/ref-fonts/geist-mono/GeistMono-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
