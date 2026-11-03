@@ -1,6 +1,11 @@
 name: Release
 
 on:
+  # Merging a version PR (package version bumped via `pnpm run version`) publishes it.
+  # release.sh skips if the version is already on npm.
+  push:
+    branches: [main]
+    paths: [packages/geist-svelte/package.json]
   workflow_dispatch:
     inputs:
       skip_version:
@@ -39,7 +44,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Ensure changeset exists
-        if: ${{ !inputs.skip_version }}
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.skip_version }}
         run: |
           if ! find .changeset -maxdepth 1 -type f -name "*.md" | grep -q .; then
             echo "No changesets found. Add one (e.g. pnpm changeset:patch 'Your message') before running a release."
@@ -47,11 +52,11 @@ jobs:
           fi
 
       - name: Version packages
-        if: ${{ !inputs.skip_version }}
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.skip_version }}
         run: pnpm run version
 
       - name: Commit version changes
-        if: ${{ !inputs.skip_version }}
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.skip_version }}
         run: |
           if git diff --quiet; then
             echo "No version changes to commit."
