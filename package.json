@@ -12,6 +12,6 @@
     "changeset:major": "node .github/scripts/add-changeset.mjs major"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.0"
+    "@changesets/cli": "^3.0.3"
   }
 }
