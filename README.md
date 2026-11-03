@@ -89,19 +89,43 @@ import 'geist-svelte/font/mono';
 
 ## Pixel Variants
 
-| Export               | CSS Variable                    | Description              |
-| -------------------- | ------------------------------- | ------------------------ |
-| `GeistPixelSquare`   | `--font-geist-pixel-square`     | Square pixel shapes      |
-| `GeistPixelGrid`     | `--font-geist-pixel-grid`       | Grid-based pixel pattern |
-| `GeistPixelCircle`   | `--font-geist-pixel-circle`     | Circular pixel shapes    |
-| `GeistPixelTriangle` | `--font-geist-pixel-triangle`   | Triangular pixel shapes  |
-| `GeistPixelLine`     | `--font-geist-pixel-line`       | Line-based pixel pattern |
+`geist-svelte/font/pixel` registers the five static Pixel fonts. Each variant also has its own entry, so you can register just one. The variable font is only available from `geist-svelte/font/pixel/variable` (it is not part of `geist-svelte/font/pixel`, same as the official `geist` package).
+
+| Export               | Import Path                        | CSS Variable                  | Font Family              | Description                          |
+| -------------------- | ---------------------------------- | ----------------------------- | ------------------------ | ------------------------------------ |
+| `GeistPixelSquare`   | `geist-svelte/font/pixel/square`   | `--font-geist-pixel-square`   | `'Geist Pixel Square'`   | Square pixel shapes                  |
+| `GeistPixelGrid`     | `geist-svelte/font/pixel/grid`     | `--font-geist-pixel-grid`     | `'Geist Pixel Grid'`     | Grid-based pixel pattern             |
+| `GeistPixelCircle`   | `geist-svelte/font/pixel/circle`   | `--font-geist-pixel-circle`   | `'Geist Pixel Circle'`   | Circular pixel shapes                |
+| `GeistPixelTriangle` | `geist-svelte/font/pixel/triangle` | `--font-geist-pixel-triangle` | `'Geist Pixel Triangle'` | Triangular pixel shapes              |
+| `GeistPixelLine`     | `geist-svelte/font/pixel/line`     | `--font-geist-pixel-line`     | `'Geist Pixel Line'`     | Line-based pixel pattern             |
+| `GeistPixel`         | `geist-svelte/font/pixel/variable` | `--font-geist-pixel`          | `'Geist Pixel'`          | Variable font, all shapes via `ELSH` |
 
 ```svelte
 <script lang="ts">
-  import 'geist-svelte/font/pixel';
+  import 'geist-svelte/font/pixel'; // all 5 static variants
+  import 'geist-svelte/font/pixel/grid'; // or only Grid
 </script>
 ```
+
+The variable font (`GeistPixel`) has a single `ELSH` (Element Shape) axis from `0` to `100`. Pick a style with `font-variation-settings`:
+
+| Style    | `font-variation-settings` |
+| -------- | ------------------------- |
+| Regular  | `'ELSH' 0` (default)      |
+| Square   | `'ELSH' 1`                |
+| Circle   | `'ELSH' 20`               |
+| Grid     | `'ELSH' 40`               |
+| Triangle | `'ELSH' 60`               |
+| Line     | `'ELSH' 80`               |
+
+```css
+.headline {
+  font-family: var(--font-geist-pixel);
+  font-variation-settings: 'ELSH' 40; /* Grid */
+}
+```
+
+All Pixel fonts are registered at weight 500 and fall back to Geist Mono, then the system monospace stack.
 
 ## Serif
 
@@ -149,11 +173,12 @@ All Serif styles are weight 400 and fall back to `'Times New Roman', Times, seri
 | `geist-svelte/font/mono`              | `--font-geist-mono`              |
 | `geist-svelte/font/sans-non-variable` | `--font-geist-sans-non-variable` |
 | `geist-svelte/font/mono-non-variable` | `--font-geist-mono-non-variable` |
-| `geist-svelte/font/pixel`             | `--font-geist-pixel-square`      |
-| `geist-svelte/font/pixel`             | `--font-geist-pixel-grid`        |
-| `geist-svelte/font/pixel`             | `--font-geist-pixel-circle`      |
-| `geist-svelte/font/pixel`             | `--font-geist-pixel-triangle`    |
-| `geist-svelte/font/pixel`             | `--font-geist-pixel-line`        |
+| `geist-svelte/font/pixel/square`      | `--font-geist-pixel-square`      |
+| `geist-svelte/font/pixel/grid`        | `--font-geist-pixel-grid`        |
+| `geist-svelte/font/pixel/circle`      | `--font-geist-pixel-circle`      |
+| `geist-svelte/font/pixel/triangle`    | `--font-geist-pixel-triangle`    |
+| `geist-svelte/font/pixel/line`        | `--font-geist-pixel-line`        |
+| `geist-svelte/font/pixel/variable`    | `--font-geist-pixel`             |
 | `geist-svelte/font/serif/variable`    | `--font-geist-serif`             |
 | `geist-svelte/font/serif/regular`     | `--font-geist-serif-regular`     |
 | `geist-svelte/font/serif/square`      | `--font-geist-serif-square`      |

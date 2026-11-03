@@ -9,6 +9,7 @@ export {
   GeistPixelTriangle,
   GeistPixelLine,
 } from './font/pixel';
+export { GeistPixel } from './font/pixel/variable';
 export {
   GeistSerif,
   GeistSerifRegular,
