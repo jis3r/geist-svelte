@@ -87,6 +87,10 @@ import 'geist-svelte/font/sans';
 import 'geist-svelte/font/mono';
 ```
 
+## Italics
+
+Geist Sans and Geist Mono include true italics (weights 100 to 900) in both the variable and non-variable entries. `font-style: italic`, `<em>`, and `<i>` use them automatically with no extra import. Browsers only download the italic files when italic text is rendered.
+
 ## Pixel Variants
 
 `geist-svelte/font/pixel` registers the five static Pixel fonts. Each variant also has its own entry, so you can register just one. The variable font is only available from `geist-svelte/font/pixel/variable` (it is not part of `geist-svelte/font/pixel`, same as the official `geist` package).

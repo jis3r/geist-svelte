@@ -6,13 +6,13 @@
   const sample = 'The quick brown fox jumps over the lazy dog';
 </script>
 
-<h1>Geist Sans — Non-Variable</h1>
+<h1>Geist Sans - Non-Variable</h1>
 <p><code>import {'{ GeistSansNonVariable }'} from 'geist-svelte/font/sans-non-variable'</code></p>
-<p class="note">9 separate .woff2 files, one per weight (~300kb total).</p>
+<p class="note">9 upright and 9 italic .woff2 files, one per weight and style. Browsers only download the ones rendered.</p>
 
 <div class="compare-grid">
   <div>
-    <div class="col-header col-pkg">Package — var(--font-geist-sans-non-variable)</div>
+    <div class="col-header col-pkg">Package - var(--font-geist-sans-non-variable)</div>
     {#each weights as weight, i}
       <div class="row">
         <span class="label">{weight} {weightNames[i]}</span>
@@ -21,7 +21,7 @@
     {/each}
   </div>
   <div>
-    <div class="col-header col-ref">Reference — direct @font-face</div>
+    <div class="col-header col-ref">Reference - direct @font-face</div>
     {#each weights as weight, i}
       <div class="row">
         <span class="label">{weight} {weightNames[i]}</span>
@@ -31,8 +31,31 @@
   </div>
 </div>
 
+<h2>Italic</h2>
+<div class="compare-grid">
+  <div>
+    <div class="col-header col-pkg">Package (italic) - var(--font-geist-sans-non-variable)</div>
+    {#each weights as weight, i}
+      <div class="row">
+        <span class="label">{weight} {weightNames[i]}</span>
+        <span class="sample pkg-font" style:font-weight={weight} style:font-style="italic">{sample}</span>
+      </div>
+    {/each}
+  </div>
+  <div>
+    <div class="col-header col-ref">Reference (italic) - direct @font-face</div>
+    {#each weights as weight, i}
+      <div class="row">
+        <span class="label">{weight} {weightNames[i]}</span>
+        <span class="sample ref-font" style:font-weight={weight} style:font-style="italic">{sample}</span>
+      </div>
+    {/each}
+  </div>
+</div>
+
 <style>
   h1 { font-weight: 700; font-size: 1.75rem; margin-bottom: 0.25rem; }
+  h2 { font-weight: 600; font-size: 1rem; margin-top: 2rem; color: #888; }
   code { background: #1a1a1a; padding: 0.15rem 0.4rem; border-radius: 3px; font-size: 0.8em; }
   .note { font-size: 0.8rem; color: #666; margin-top: 0.5rem; }
 
