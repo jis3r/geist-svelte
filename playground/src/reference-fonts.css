@@ -57,14 +57,14 @@
 }
 @font-face {
   font-family: 'Ref Geist Sans NV';
-  src: url('/ref-fonts/geist-sans/Geist-Black.woff2') format('woff2');
+  src: url('/ref-fonts/geist-sans/Geist-UltraBlack.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Ref Geist Sans NV';
-  src: url('/ref-fonts/geist-sans/Geist-UltraBlack.woff2') format('woff2');
+  src: url('/ref-fonts/geist-sans/Geist-Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -129,14 +129,14 @@
 }
 @font-face {
   font-family: 'Ref Geist Mono NV';
-  src: url('/ref-fonts/geist-mono/GeistMono-Black.woff2') format('woff2');
+  src: url('/ref-fonts/geist-mono/GeistMono-UltraBlack.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Ref Geist Mono NV';
-  src: url('/ref-fonts/geist-mono/GeistMono-UltraBlack.woff2') format('woff2');
+  src: url('/ref-fonts/geist-mono/GeistMono-Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
