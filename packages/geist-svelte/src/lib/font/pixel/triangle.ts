@@ -1,5 +1,5 @@
 import './triangle.css';
-import { PIXEL_FALLBACK } from './fallback';
+import { PIXEL_FALLBACK } from './fallback.js';
 
 export const GeistPixelTriangle = {
   variable: '--font-geist-pixel-triangle',

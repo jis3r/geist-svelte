@@ -1,5 +1,5 @@
 import './regular.css';
-import { SERIF_FALLBACK } from './fallback';
+import { SERIF_FALLBACK } from './fallback.js';
 
 export const GeistSerifRegular = {
   variable: '--font-geist-serif-regular',

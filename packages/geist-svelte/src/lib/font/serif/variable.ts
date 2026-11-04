@@ -1,5 +1,5 @@
 import './variable.css';
-import { SERIF_FALLBACK } from './fallback';
+import { SERIF_FALLBACK } from './fallback.js';
 
 export const GeistSerif = {
   variable: '--font-geist-serif',

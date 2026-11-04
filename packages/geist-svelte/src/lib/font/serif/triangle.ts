@@ -1,5 +1,5 @@
 import './triangle.css';
-import { SERIF_FALLBACK } from './fallback';
+import { SERIF_FALLBACK } from './fallback.js';
 
 export const GeistSerifTriangle = {
   variable: '--font-geist-serif-triangle',

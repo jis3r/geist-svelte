@@ -1,19 +1,19 @@
-export { GeistSans } from './font/sans';
-export { GeistSansNonVariable } from './font/sans-non-variable';
-export { GeistMono } from './font/mono';
-export { GeistMonoNonVariable } from './font/mono-non-variable';
+export { GeistSans } from './font/sans.js';
+export { GeistSansNonVariable } from './font/sans-non-variable.js';
+export { GeistMono } from './font/mono.js';
+export { GeistMonoNonVariable } from './font/mono-non-variable.js';
 export {
   GeistPixelSquare,
   GeistPixelGrid,
   GeistPixelCircle,
   GeistPixelTriangle,
   GeistPixelLine,
-} from './font/pixel';
-export { GeistPixel } from './font/pixel/variable';
+} from './font/pixel.js';
+export { GeistPixel } from './font/pixel/variable.js';
 export {
   GeistSerif,
   GeistSerifRegular,
   GeistSerifSquare,
   GeistSerifTriangle,
   GeistSerifHeart,
-} from './font/serif';
+} from './font/serif.js';

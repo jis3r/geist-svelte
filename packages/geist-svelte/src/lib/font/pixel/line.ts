@@ -1,5 +1,5 @@
 import './line.css';
-import { PIXEL_FALLBACK } from './fallback';
+import { PIXEL_FALLBACK } from './fallback.js';
 
 export const GeistPixelLine = {
   variable: '--font-geist-pixel-line',

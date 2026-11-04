@@ -1,5 +1,5 @@
 import './grid.css';
-import { PIXEL_FALLBACK } from './fallback';
+import { PIXEL_FALLBACK } from './fallback.js';
 
 export const GeistPixelGrid = {
   variable: '--font-geist-pixel-grid',

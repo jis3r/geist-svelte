@@ -1,5 +1,5 @@
 import './square.css';
-import { SERIF_FALLBACK } from './fallback';
+import { SERIF_FALLBACK } from './fallback.js';
 
 export const GeistSerifSquare = {
   variable: '--font-geist-serif-square',
