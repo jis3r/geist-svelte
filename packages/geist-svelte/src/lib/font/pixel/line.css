@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Geist Pixel Line';
+  src: url('../../fonts/geist-pixel/GeistPixel-Line.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-geist-pixel-line: 'Geist Pixel Line', 'Geist Mono', ui-monospace,
+    SFMono-Regular, 'Roboto Mono', Menlo, Monaco, 'Liberation Mono',
+    'DejaVu Sans Mono', 'Courier New', monospace;
+}

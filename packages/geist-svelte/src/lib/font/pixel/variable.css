@@ -1,0 +1,18 @@
+/*
+ * Geist Pixel variable font. One axis: 'ELSH' (Element Shape), 0 to 100.
+ * Named instances: Regular 0, Square 1, Circle 20, Grid 40, Triangle 60,
+ * Line 80. Select a shape with font-variation-settings: 'ELSH' <value>.
+ */
+@font-face {
+  font-family: 'Geist Pixel';
+  src: url('../../fonts/geist-pixel/GeistPixel-Variable.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-geist-pixel: 'Geist Pixel', 'Geist Mono', ui-monospace, SFMono-Regular,
+    'Roboto Mono', Menlo, Monaco, 'Liberation Mono', 'DejaVu Sans Mono',
+    'Courier New', monospace;
+}

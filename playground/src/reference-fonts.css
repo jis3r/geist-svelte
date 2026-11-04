@@ -213,3 +213,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Ref Geist Pixel';
+  src: url('/ref-fonts/geist-pixel/GeistPixel-Variable.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

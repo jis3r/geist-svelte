@@ -8,7 +8,7 @@
     <li><a href="/sans-nv">Sans NV</a> - Non-variable Geist Sans, 9 static weight files</li>
     <li><a href="/mono">Mono</a> - Variable Geist Mono, weights 100 to 900</li>
     <li><a href="/mono-nv">Mono NV</a> - Non-variable Geist Mono, 9 static weight files</li>
-    <li><a href="/pixel">Pixel</a> - All 5 pixel variants (Square, Grid, Circle, Triangle, Line)</li>
+    <li><a href="/pixel">Pixel</a> - Variable Geist Pixel (ELSH axis) and all 5 static variants (Square, Grid, Circle, Triangle, Line)</li>
     <li><a href="/serif">Serif</a> - Variable Geist Serif (ELSH axis) and 4 static styles</li>
     <li><a href="/tailwind">Tailwind</a> - Tailwind v4 utility class integration</li>
     <li><a href="/metadata">Metadata</a> - TypeScript API (.variable, .style.fontFamily)</li>

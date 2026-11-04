@@ -56,6 +56,36 @@
       "svelte": "./dist/font/pixel.js",
       "default": "./dist/font/pixel.js"
     },
+    "./font/pixel/variable": {
+      "types": "./dist/font/pixel/variable.d.ts",
+      "svelte": "./dist/font/pixel/variable.js",
+      "default": "./dist/font/pixel/variable.js"
+    },
+    "./font/pixel/square": {
+      "types": "./dist/font/pixel/square.d.ts",
+      "svelte": "./dist/font/pixel/square.js",
+      "default": "./dist/font/pixel/square.js"
+    },
+    "./font/pixel/grid": {
+      "types": "./dist/font/pixel/grid.d.ts",
+      "svelte": "./dist/font/pixel/grid.js",
+      "default": "./dist/font/pixel/grid.js"
+    },
+    "./font/pixel/circle": {
+      "types": "./dist/font/pixel/circle.d.ts",
+      "svelte": "./dist/font/pixel/circle.js",
+      "default": "./dist/font/pixel/circle.js"
+    },
+    "./font/pixel/triangle": {
+      "types": "./dist/font/pixel/triangle.d.ts",
+      "svelte": "./dist/font/pixel/triangle.js",
+      "default": "./dist/font/pixel/triangle.js"
+    },
+    "./font/pixel/line": {
+      "types": "./dist/font/pixel/line.d.ts",
+      "svelte": "./dist/font/pixel/line.js",
+      "default": "./dist/font/pixel/line.js"
+    },
     "./font/serif": {
       "types": "./dist/font/serif.d.ts",
       "svelte": "./dist/font/serif.js",
