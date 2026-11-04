@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/geist-svelte)](https://www.npmjs.com/package/geist-svelte) [![license](https://img.shields.io/npm/l/geist-svelte)](https://www.npmjs.com/package/geist-svelte)
 
-[Geist font family](https://vercel.com/font) for Svelte and SvelteKit. Sans, Mono, and Pixel variants.
+[Geist font family](https://vercel.com/font) for Svelte and SvelteKit. Sans, Mono, Serif, and Pixel variants.
 
 ## Installation
 
@@ -103,6 +103,44 @@ import 'geist-svelte/font/mono';
 </script>
 ```
 
+## Serif
+
+Geist Serif ships as one variable font plus four static styles. Each style has its own entry, so you only register what you import. `geist-svelte/font/serif` registers all five.
+
+| Export               | Import Path                        | CSS Variable                  | Font Family              |
+| -------------------- | ---------------------------------- | ----------------------------- | ------------------------ |
+| `GeistSerif`         | `geist-svelte/font/serif/variable` | `--font-geist-serif`          | `'Geist Serif'`          |
+| `GeistSerifRegular`  | `geist-svelte/font/serif/regular`  | `--font-geist-serif-regular`  | `'Geist Serif Regular'`  |
+| `GeistSerifSquare`   | `geist-svelte/font/serif/square`   | `--font-geist-serif-square`   | `'Geist Serif Square'`   |
+| `GeistSerifTriangle` | `geist-svelte/font/serif/triangle` | `--font-geist-serif-triangle` | `'Geist Serif Triangle'` |
+| `GeistSerifHeart`    | `geist-svelte/font/serif/heart`    | `--font-geist-serif-heart`    | `'Geist Serif Heart'`    |
+
+```svelte
+<script lang="ts">
+  import 'geist-svelte/font/serif/variable';
+</script>
+
+<h1>Geist Serif</h1>
+
+<style>
+  h1 {
+    font-family: var(--font-geist-serif);
+    font-variation-settings: 'ELSH' 100; /* Heart */
+  }
+</style>
+```
+
+The variable font (`GeistSerif`) has a single `ELSH` (Element Shape) axis from `0` to `100`. Pick a style with `font-variation-settings`:
+
+| Style    | `font-variation-settings` |
+| -------- | ------------------------- |
+| Regular  | `'ELSH' 0` (default)      |
+| Square   | `'ELSH' 25`               |
+| Triangle | `'ELSH' 50`               |
+| Heart    | `'ELSH' 100`              |
+
+All Serif styles are weight 400 and fall back to `'Times New Roman', Times, serif`.
+
 ## CSS Variables
 
 | Import Path                           | CSS Variable                     |
@@ -116,6 +154,11 @@ import 'geist-svelte/font/mono';
 | `geist-svelte/font/pixel`             | `--font-geist-pixel-circle`      |
 | `geist-svelte/font/pixel`             | `--font-geist-pixel-triangle`    |
 | `geist-svelte/font/pixel`             | `--font-geist-pixel-line`        |
+| `geist-svelte/font/serif/variable`    | `--font-geist-serif`             |
+| `geist-svelte/font/serif/regular`     | `--font-geist-serif-regular`     |
+| `geist-svelte/font/serif/square`      | `--font-geist-serif-square`      |
+| `geist-svelte/font/serif/triangle`    | `--font-geist-serif-triangle`    |
+| `geist-svelte/font/serif/heart`       | `--font-geist-serif-heart`       |
 
 ## Non-Variable Fonts
 

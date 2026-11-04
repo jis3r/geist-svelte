@@ -177,3 +177,39 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Ref Geist Serif';
+  src: url('/ref-fonts/geist-serif/GeistSerif-Variable.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Serif Regular';
+  src: url('/ref-fonts/geist-serif/GeistSerif-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Serif Square';
+  src: url('/ref-fonts/geist-serif/GeistSerif-Square.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Serif Triangle';
+  src: url('/ref-fonts/geist-serif/GeistSerif-Triangle.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ref Geist Serif Heart';
+  src: url('/ref-fonts/geist-serif/GeistSerif-Heart.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

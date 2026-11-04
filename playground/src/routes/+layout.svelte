@@ -13,6 +13,7 @@
     { href: '/mono', label: 'Mono' },
     { href: '/mono-nv', label: 'Mono NV' },
     { href: '/pixel', label: 'Pixel' },
+    { href: '/serif', label: 'Serif' },
     { href: '/tailwind', label: 'Tailwind' },
     { href: '/metadata', label: 'Metadata' },
     { href: '/barrel', label: 'Barrel' },

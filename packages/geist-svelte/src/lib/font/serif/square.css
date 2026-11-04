@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Geist Serif Square';
+  src: url('../../fonts/geist-serif/GeistSerif-Square.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-geist-serif-square: 'Geist Serif Square', 'Times New Roman', Times,
+    serif;
+}

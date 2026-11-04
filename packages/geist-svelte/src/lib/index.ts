@@ -9,3 +9,10 @@ export {
   GeistPixelTriangle,
   GeistPixelLine,
 } from './font/pixel';
+export {
+  GeistSerif,
+  GeistSerifRegular,
+  GeistSerifSquare,
+  GeistSerifTriangle,
+  GeistSerifHeart,
+} from './font/serif';
